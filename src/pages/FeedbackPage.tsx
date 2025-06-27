@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Navigate, useNavigate } from 'react-router-dom';
 import FeedbackForm from '../components/FeedbackForm';
+import ApiRequest from '../lib/ApiRequest';
 
 const FeedbackPage: React.FC = () => {
   const { userId } = useParams<{ userId: string }>();
@@ -14,13 +15,8 @@ const FeedbackPage: React.FC = () => {
       setUserExists(false);
       return;
     }
-    const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5001';
     setChecking(true);
-    fetch(`${API_URL}/api/user/lookup/${userId}`)
-      .then(res => {
-        if (res.ok) return res.json();
-        throw new Error('User not found');
-      })
+    ApiRequest.userLookup(userId)
       .then(data => {
         if (data && data.user_identifier) {
           setUserExists(true);

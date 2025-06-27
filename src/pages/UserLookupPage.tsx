@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { Search, User, Loader2, Send } from 'lucide-react';
-import Button from '../components/ui/Button';
+import Button from '../components/Button';
 import Footer from '../components/Footer';
 
 const UserLookupPage: React.FC = () => {

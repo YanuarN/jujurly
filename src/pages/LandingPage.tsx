@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import { Shield, Copy, Check, MessageCircle, Send } from 'lucide-react';
 import Card from '../components/Card';
-import Button from '../components/ui/Button';
+import Button from '../components/Button';
 import Footer from '../components/Footer';
 
 
@@ -36,7 +36,7 @@ const LandingPage: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#88d5ec] via-[#efefeb] to-[#48f6ad]">
+    <div className="min-h-screen bg-gradient-to-br from-blue-200 via-white to-blue-100">
       {/* Header */}
       <header className="text-center pt-16 pb-10">
         <h1 className="text-5xl md:text-6xl font-bold text-transparent bg-clip-text bg-blue-500 mb-4">
