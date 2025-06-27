@@ -1,6 +1,5 @@
 // src/components/FeedbackForm.tsx
 import { useState, useEffect } from 'react';
-import '../App.css';
 
 interface FeedbackFormProps {
   userId: string;

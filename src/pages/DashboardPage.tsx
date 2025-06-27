@@ -1,7 +1,7 @@
 // src/pages/DashboardPage.tsx
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
-import './DashboardPage.css'; // We'll create this CSS file
+// import './DashboardPage.css'; // We'll create this CSS file
 
 // Placeholder for actual authentication and data fetching logic
 const isAuthenticated = true; // Assume user is logged in for now

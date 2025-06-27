@@ -1,7 +1,7 @@
 // src/pages/ForgotPasswordPage.tsx
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './ForgotPasswordPage.css'; // You'll create this CSS file next
+// import './ForgotPasswordPage.css'; // You'll create this CSS file next
 
 const ForgotPasswordPage: React.FC = () => {
   const [email, setEmail] = useState('');

@@ -1,7 +1,8 @@
 // src/pages/RegisterPage.tsx
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import './RegisterPage.css';
+import Button from '../components/ui/Button';
+// import './RegisterPage.css';
 
 const RegisterPage: React.FC = () => {
   const [email, setEmail] = useState('');
@@ -29,7 +30,7 @@ const RegisterPage: React.FC = () => {
       }
       // Handle successful registration (e.g., redirect to login or dashboard)
       navigate('/dashboard'); 
-    } catch (err: any) {
+    } catch (err : any) {
       setError(err.message);
     }
   };

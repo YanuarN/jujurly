@@ -11,7 +11,7 @@ import UserLookupPage from './pages/UserLookupPage';
 function App() {
   // Mock authentication check
   // In a real app, this would involve checking a token, context, or similar
-  const isAuthenticated = !!localStorage.getItem('userData'); 
+  // const isAuthenticated = !!localStorage.getItem('userData'); 
 
   return (
     <Router>
@@ -20,7 +20,7 @@ function App() {
         {/* Route for giving feedback, potentially with a user identifier */}
         <Route path="/ke" element={<UserLookupPage />} /> {/* Changed from /beri-feedback */}
         <Route path="/ke/:userId" element={<FeedbackPage />} /> {/* Changed from /beri-feedback/:userId */}
-        <Route path="/dashboard" element={isAuthenticated ? <DashboardPage /> : <LoginPage />} />
+        <Route path="/dashboard" element={<DashboardPage />} />
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/forgot-password" element={<ForgotPasswordPage />} /> {/* Add route for forgot password */}
