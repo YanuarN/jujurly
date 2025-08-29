@@ -148,10 +148,10 @@ function FeedbackForm({ userId }: FeedbackFormProps) {
                     control={control}
                     rules={{
                       required: "Nama Pengguna Harus Diisi",
-                      pattern: {
-                        value: /^\S+@\S+$/,
-                        message: "format nama salah",
-                      },
+                      // pattern: {
+                      //   value: /^\S+@\S+$/,
+                      //   message: "format nama salah",
+                      // },
                     }}
                     placeholder="cth: temen sekelas, rekan kerja proyek X"
                     className="!text-black"
@@ -185,10 +185,10 @@ function FeedbackForm({ userId }: FeedbackFormProps) {
                     control={control}
                     rules={{
                       required: "Feedback Pengguna Harus Diisi",
-                      pattern: {
-                        value: /^\S+@\S+$/,
-                        message: "format feedback salah",
-                      },
+                      // pattern: {
+                      //   value: /^\S+@\S+$/,
+                      //   message: "format feedback salah",
+                      // },
                     }}
                     placeholder="'Gue suka cara lo presentasi' atau 'parah banget, kerjaan kacau babiii'"
                     name="feedback_text"
@@ -223,10 +223,10 @@ function FeedbackForm({ userId }: FeedbackFormProps) {
                     control={control}
                     rules={{
                       required: "Konteks Feedback Harus Diisi",
-                      pattern: {
-                        value: /^\S+@\S+$/,
-                        message: "format nama salah",
-                      },
+                      // pattern: {
+                      //   value: /^\S+@\S+$/,
+                      //   message: "format nama salah",
+                      // },
                     }}
                     placeholder="cth: pas proyek X, abis presentasi"
                     name="context_text"
@@ -259,7 +259,6 @@ function FeedbackForm({ userId }: FeedbackFormProps) {
                     dataAosDelay={200}
                     control={control}
                     rules={{
-                      required: "Email Harus Diisi",
                       pattern: {
                         value: /^\S+@\S+$/,
                         message: "format Email salah",

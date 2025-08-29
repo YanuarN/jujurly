@@ -71,7 +71,7 @@ const AppHomeSection = () => {
                 dataAos="zoom-in"
                 text="Mau Kumpulkan Feedback"
                 className="!min-w-fit sm:!min-w-fit md:!w-fit lg:!w-fit xl:w-fit bg-white !text-black border-1 border-black font-poppins"
-                onClick={() => navigate("/beri-feedback/:userId")}
+                onClick={() => navigate("/dashboard")}
               />
               <AppButton
                 dataAos="zoom-in"

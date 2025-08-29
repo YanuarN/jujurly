@@ -33,7 +33,7 @@ const ForgotPasswordPage: React.FC = () => {
       };
       const res = await authRepository.forgotPass(payload);
 
-      if (res.statusNumber == "OK") {
+      if (res.statusNumber === 200) {
         toast.update(
           toastId,
           updateToastConfig("Email Telah Terkirim.", "success")

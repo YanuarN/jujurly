@@ -118,8 +118,7 @@ const UserLookupPage: React.FC = () => {
             dataAos="zoom-in"
             dataAosDelay={400}
             className="bg-blue-500 hover:bg-blue-600 font-poppins py-[16px] rounded-xl font-medium w-full text-[16px] mb-[20px] flex items-center justify-center gap-[8px]"
-            text={"Lanjut Kasih Feedback"
-            }
+            text={"Lanjut Kasih Feedback"}
             type="submit"
             onClick={handleSubmit(handleUserLookup)}
             disabled={isLoading}

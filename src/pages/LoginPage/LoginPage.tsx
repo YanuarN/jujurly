@@ -38,7 +38,7 @@ const LoginPage: React.FC = () => {
     const toastId = toast.loading("Logging in...");
     try {
       const res = await authRepository.login(data);
-      if (res.statusNumber == 200) {
+      if (res.statusNumber === 200) {
         localStorage.setItem("userData", JSON.stringify(res));
         toast.update(toastId, updateToastConfig("Login berhasil", "success"));
         navigate("/dashboard");
